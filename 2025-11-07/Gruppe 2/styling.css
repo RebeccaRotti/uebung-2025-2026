@@ -1,0 +1,25 @@
+body {
+    background-color: #a1d5af;
+    font-size: 120%;
+}
+
+body .p {
+    padding: 10px;
+    background-color: #933f3f;
+}
+.design-01 {
+    color: #457e43;
+    background-color: #3c4c69;
+    /*padding: 10px;*/
+}
+.design-02 {
+    color: cornflowerblue;
+    background-color: bisque;
+    /*padding: 10px;*/
+}
+.img-responsive {
+    max-width: 560px;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+}
