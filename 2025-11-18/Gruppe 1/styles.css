@@ -1,0 +1,74 @@
+/*
+primary (dark) lila: #2E073F / rgb(46, 7, 63)
+secondary lila: #7A1CAC / rgb(122, 28, 172)
+third lila: #AD49E1 / rgb(173, 73, 225)
+light: #EBD3F8 / rgb(235, 211, 248)
+*/
+:root {
+    --primary-color: #2e073f;
+    --secondary-color: #7A1CAC;
+    --tertiary-color: #AD49E1;
+    --quaternary-color: #EBD3F8;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    font-family: "Lexend", sans-serif;
+}
+h1 {
+    font-family: "Geostar", serif;
+    background-color: rgba(19, 3, 25, 0.62);
+    padding: 1.8em;
+    width: 100vw;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-family: "Geostar", serif;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.navbar a:hover {
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 15px 5px;
+    box-shadow: 2px 2px 4px var(--quaternary-color);
+}
+header {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1741466071751-c62474d2d3ae?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+article {
+    min-height: 100vh;
+    border-bottom: 1px solid var(--quaternary-color);
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 280px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
