@@ -1,0 +1,58 @@
+/*
+(dark) color_1: #240750 / rgb(36, 7, 80)
+color_2: #344C64 / rgb(52, 76, 100)
+color_3: #577B8D / rgb(87, 123, 141)
+(light) color_4: #57A6A1 / rgb(87, 166, 161)
+*/
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #240750;
+    margin: 0;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar {
+    background-color: rgba(0,0,0,0.69);
+    padding: 1px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #57A6A1;
+    padding: 14px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+    font-size: 120%;
+}
+header {
+    /*min-height: calc(100vh - 54px);*/
+    background-image: url("https://images.unsplash.com/photo-1627260119201-dea52faff0ee?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header div {
+    display: flex;
+    background-color: rgba(87, 123, 141, 0.64);
+    min-height: calc(100vh - 54px);
+    justify-content: center;
+    align-items: center;
+}
+h1, h2 {
+    font-family: "League Script", cursive;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 1px 1px 0px #fff;
+}
+article {
+    min-height: 100vh;
+    background-color: rgba(52, 76, 100, 0.78);
+    padding: 1em 2em;
+}
