@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Quicksand:wght@300..700&display=swap');
+/*
+Schreibschrift {
+  font-family: "League Script", cursive;
+}
+Normale Schrift {
+  font-family: "Quicksand", sans-serif;
+}
+*/
+:root {
+    --color_1: #504038;
+    --color_2: #cfbdb5;
+    --color_3: #7a5442;
+    --color_4: #fad1be;
+    --color_5: #ffb897;
+}
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+h1, h2 {
+    font-family: "League Script", cursive;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color_5);
+}
+/* Navigation */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    flex: 1 1 100px;
+    text-align: center;
+}
+nav {
+    background-color: var(--color_4);
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+nav a {
+    text-decoration: none;
+    color: #252525;
+    padding: 10px;
+    display: block;
+}
+nav a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--color_1);
+}
+/* Ende Navigation */
+/* Allgemeine Anweisungen */
+article {
+    padding: 2rem;
+}
+.bg-color-1 {
+    background-color: var(--color_1);
+}
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: white;
+}
+#about p span {
+    font-weight: bold;
+    color: var(--color_4);
+}
+
+.round-img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 2px 2px 5px #201f1f;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
