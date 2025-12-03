@@ -1,0 +1,89 @@
+/*
+color_1: #4B352A
+color_2: #CA7842
+color_3: #B2CD9C
+color_4: #F0F2BD
+
+Normale Schrift
+font-family: "Quicksand", sans-serif;
+
+Fancy Schrift
+font-family: "Henny Penny", system-ui;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --color_1: #4B352A;
+    --color_2: #CA7842;
+    --color_3: #B2CD9C;
+    --color_4: #F0F2BD;
+}
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+header {
+    background-color: var(--color_3);
+    text-align: center;
+    padding: 2em;
+}
+h1, h2 {
+    font-family: "Henny Penny", system-ui;
+}
+/* Navigation */
+nav {
+    background-color: var(--color_4);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: #232222;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--color_2);
+}
+nav ul li {
+    flex: 1 1 150px;
+    text-align: center;
+}
+/* Ende Navigation */
+
+article {
+    padding: 2rem;
+    min-height: 100vh;
+    border-bottom: 3px dashed gray;
+}
+
+.round-img {
+    border-radius: 50%;
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px #2b2b2b;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.text-center {
+    text-align: center;
+}
